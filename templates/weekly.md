@@ -35,7 +35,7 @@ for (let i = 0; i < 7; i++) {
   let week_day = monday.clone().add(i, "day");
   let day_link = `[[${week_day.format(patterns.daily)}|${week_day.format("dd DD")}]]`;
   tR += day_link;
-  if (week_day.isoWeekday() < 7) {
+  if (i < 6) {
     tR += " · ";
   }
 }

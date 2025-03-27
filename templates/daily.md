@@ -24,7 +24,7 @@ for (let i = 0; i < 7; i++) {
     day_link = `**${day_link}**`;
   }
   tR += day_link;
-  if (week_day.isoWeekday() < 7) {
+  if (i < 6) {
     tR += " · ";
   }
 }
